@@ -104,7 +104,7 @@ if 'DYNO' in environ:
 else:
     ON_HEROKU = False
 BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
-URL = "https://madarabot-9a205e6fff5e.herokuapp.com".format(FQDN) if ON_HEROKU or NO_PORT else \
+URL = "https://madarabot-9a205e6fff5e.herokuapp.com".format
     "https://madarabot-9a205e6fff5e.herokuapp.com/".format(FQDN, PORT)
 SLEEP_THRESHOLD = int(environ.get('SLEEP_THRESHOLD', '60'))
 WORKERS = int(environ.get('WORKERS', '4'))
