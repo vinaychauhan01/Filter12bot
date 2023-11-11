@@ -27,10 +27,7 @@ CACHE_TIME = int(environ.get('CACHE_TIME', 1800))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
 
-PICS = environ.get('PICS','https://telegra.ph/file/0af58e51a879c940dccd1.jpg https://telegra.ph/file/8b123c01484dc3ef27472.jpg
-https://telegra.ph/file/823b6af6191910af6a8e5.jpg
-https://telegra.ph/file/8af31419679b087e4f668.jpg
-https://telegra.ph/file/0f0b655d055d794aa4f81.jpg')).split() #SAMPLE PIC
+PICS = (environ.get('PICS', 'https://graph.org/file/019d618abd74b2570b432.jpg')).split() #SAMPLE PIC
 NOR_IMG = environ.get("NOR_IMG", "https://te.legra.ph/file/a27dc8fe434e6b846b0f8.jpg")
 MELCOW_VID = environ.get("MELCOW_VID", "https://t.me/How_To_Open_Linkl")
 SPELL_IMG = environ.get("SPELL_IMG", "https://te.legra.ph/file/15c1ad448dfe472a5cbb8.jpg")
