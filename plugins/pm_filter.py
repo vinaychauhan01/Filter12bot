@@ -1,6 +1,6 @@
-# Don't Remove Credit @VJ_Botz
+# Don't Remove Credit @Jaat
 # Subscribe YouTube Channel For Amazing Bot @Tech_VJ
-# Ask Doubt on telegram @KingVJ01
+# Ask Doubt on telegram @jaat
 
 # Kanged From @TroJanZheX
 import asyncio
@@ -1176,7 +1176,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         btn2 = [[
                  InlineKeyboardButton("Vɪᴇᴡ Sᴛᴀᴛᴜs", url=f"{query.message.link}")
                ],[
-                 InlineKeyboardButton("Rᴇᴏ̨ᴜᴇsᴛ Gʀᴏᴜᴘ Lɪɴᴋ", url="https://t.me/+hgfghg")
+                 InlineKeyboardButton("Rᴇᴏ̨ᴜᴇsᴛ Gʀᴏᴜᴘ Lɪɴᴋ", url="https://t.me/Filmy4wabOriginal")
                ]]
         if query.from_user.id in ADMINS:
             user = await client.get_users(from_user)
@@ -1957,7 +1957,7 @@ async def auto_filter(client, msg, spoll=False):
             return
         if len(message.text) < 100:
             search = message.text
-            m=await message.reply_text(f"<b><i> ᴀɪ ᴘᴏᴡᴇʀ 2.0 ɪs ᴡᴏʀᴋɪɴɢ... 𝖿𝗈𝗋 '{search}' 🔎</i></b>")
+            m=await message.reply_text(f"<b><i> ᴀɪ ᴘᴏᴡᴇʀ 2.0 ɪs ᴡᴏʀᴋɪɴɢ... '{search}' 🔎</i></b>")
             search = search.lower()
             find = search.split(" ")
             search = ""
@@ -1986,7 +1986,7 @@ async def auto_filter(client, msg, spoll=False):
     else:
         message = msg.message.reply_to_message  # msg will be callback query
         search, files, offset, total_results = spoll
-        m=await message.reply_text(f"<b><i> ᴀɪ ᴘᴏᴡᴇʀ 2.0 ɪs ᴡᴏʀᴋɪɴɢ... 𝖿𝗈𝗋 '{search}' 🔎</i></b>")
+        m=await message.reply_text(f"<b><i> ᴀɪ ᴘᴏᴡᴇʀ 2.0 ɪs ᴡᴏʀᴋɪɴɢ...  '{search}' 🔎</i></b>")
         settings = await get_settings(message.chat.id)
         await msg.message.delete()
     pre = 'filep' if settings['file_secure'] else 'file'
