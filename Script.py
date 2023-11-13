@@ -27,7 +27,7 @@ href='https://t.me/Itsmeshivam_4'>Movie Provider</a></b>
 Tʜɪs Bᴏᴛ ʜᴀs Lᴀᴛᴇsᴛ ᴀɴᴅ Aᴅᴠᴀɴᴄᴇᴅ Fᴇᴀᴛᴜʀᴇs⚡️
 
 
-Developer - <a href='https://t.me/Itsmeshivam_4'>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a></b>"""
+Developer - <a href='https://t.me/V_Sbotmaker'>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a></b>"""
 
 
 
