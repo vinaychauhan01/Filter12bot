@@ -1,6 +1,6 @@
-# Don't Remove Credit @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot @Tech_VJ
-# Ask Doubt on telegram @KingVJ01
+# Don't Remove Credit @VS_bots
+# Subscribe YouTube Channel For Amazing Bot @VS_bots
+# Ask Doubt on telegram @V_Sbotmaker
 
 #Thanks @Lazy helping this journey 
 import asyncio
