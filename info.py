@@ -27,7 +27,11 @@ CACHE_TIME = int(environ.get('CACHE_TIME', 1800))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
 
-PICS = (environ.get('PICS', 'https://graph.org/file/019d618abd74b2570b432.jpg')).split() #SAMPLE PIC
+PICS = (environ.get('PICS', 'https://telegra.ph/file/731ca3e5df464601cfbf4.jpg
+https://telegra.ph/file/f8c1cad391b585fec30cf.jpg
+https://telegra.ph/file/33b285b3e099f711f79e6.jpg
+https://telegra.ph/file/a80b4d8b38239fa3e7f53.jpg
+https://telegra.ph/file/03279606d82d0ba40e999.jpg')).split() #SAMPLE PIC
 NOR_IMG = environ.get("NOR_IMG", "https://te.legra.ph/file/a27dc8fe434e6b846b0f8.jpg")
 MELCOW_VID = environ.get("MELCOW_VID", "https://t.me/How_To_Open_Linkl")
 SPELL_IMG = environ.get("SPELL_IMG", "https://te.legra.ph/file/15c1ad448dfe472a5cbb8.jpg")
@@ -49,14 +53,14 @@ SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://chauhan01:chauhan01@cluster0.raoeb0e.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Clustor0")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://vinayjaat:vinay123@vinay1.3yzdb9g.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_NAME = environ.get('DATABASE_NAME', "vinay1")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
 VERIFY = bool(environ.get('VERIFY', False))
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'moneykamalo.com')
-SHORTLINK_API = environ.get('SHORTLINK_API', '0eefb93e1e3ce9470a7033115ceb1bad13a9d674')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'vnshortener.com')
+SHORTLINK_API = environ.get('SHORTLINK_API', '1ee9140a88d9813183e2af2870487c5eae50e285')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "5")
@@ -68,7 +72,7 @@ TUTORIAL = environ.get('TUTORIAL', 'https://t.me/How_To_Open_Linkl')
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 MSG_ALRT = environ.get('MSG_ALRT', 'Hello My Dear Friends ❤️')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001839965169'))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'vj_bot_disscussion')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'vs_support_group')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
@@ -81,7 +85,7 @@ LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False")
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
 INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
-FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).split()]
+FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1002109941410')).split()]
 MELCOW_NEW_USERS = is_enabled((environ.get('MELCOW_NEW_USERS', "True")), True)
 PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), False)
 PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
