@@ -27,7 +27,7 @@ CACHE_TIME = int(environ.get('CACHE_TIME', 1800))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
 
-PICS = (environ.get('PICS', 'https://telegra.ph/file/731ca3e5df464601cfbf4.jpg
+PICS = (environ.get('PICS','https://telegra.ph/file/731ca3e5df464601cfbf4.jpg
 https://telegra.ph/file/f8c1cad391b585fec30cf.jpg
 https://telegra.ph/file/33b285b3e099f711f79e6.jpg
 https://telegra.ph/file/a80b4d8b38239fa3e7f53.jpg
