@@ -680,9 +680,6 @@ special Thanks To ❤️ Developers -
 
 
 """
-     PREMIUM_PLAN ="""
-premium plans are here
-"""
 
 
 # Don't Remove Credit @V_Sbotmaker
