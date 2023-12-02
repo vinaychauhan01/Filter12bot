@@ -1883,7 +1883,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await client.edit_message_media(
                 query.message.chat.id, 
                 query.message.id, 
-                InputMediaPhoto(random.choice(NOR_IMG))
+                InputMediaPhoto(https://telegra.ph/file/456acfa2ca5c4d6e181c2.jpg))
             )
             reply_markup = InlineKeyboardMarkup(btn)
             await query.message.edit_text(
