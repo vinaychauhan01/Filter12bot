@@ -681,6 +681,11 @@ special Thanks To ❤️ Developers -
 
 """
 
+PREMIUM_TXT = """
+add free movies are here
+
+"""
+
 
 # Don't Remove Credit @V_Sbotmaker
 # Subscribe YouTube Channel For Amazing Bot @Tech_VJ
