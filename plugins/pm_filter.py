@@ -1299,7 +1299,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton('💫 Hᴇʟᴘ', callback_data='help'),
                     InlineKeyboardButton('🐉 Aʙᴏᴜᴛ', callback_data='about')
                 ],[
-                  InlineKeyboardButton('🌺 Ad free premium  plan 🌺', callback_data='buy_premium')
+                  InlineKeyboardButton('💰 Buy Premium for adz Free Movies ✅', callback_data='buy_premium')
                 ],[
                     InlineKeyboardButton('⚓ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ⚓', url=CHNL_LNK)
                   ]]
