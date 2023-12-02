@@ -681,10 +681,8 @@ special Thanks To ❤️ Developers -
 
 """
 
-PREMIUM_TXT = """
-add free movies are here
-
-"""
+    PREMIUM_TXT = """
+ADD YOUR PLAN IN SCRIPT.PY"""
 
 
 # Don't Remove Credit @V_Sbotmaker
