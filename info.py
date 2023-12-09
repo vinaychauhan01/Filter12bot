@@ -123,7 +123,7 @@ else:
     ON_HEROKU = False
 HAS_SSL=bool(getenv('HAS_SSL',False))
 if HAS_SSL:
-    URL = "https://l-draco.onrender.com/".format(FQDN)
+    URL = "https://l-drago.onrender.com/".format(FQDN)
 else:
     URL = "https://l-draco.onrender.com/".format(FQDN)
 
