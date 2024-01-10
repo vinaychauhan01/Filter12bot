@@ -695,7 +695,7 @@ Prime Membership Progress
 
 12 Months - 450 Rs [1 Month Free Trial]
 
-♛ UPI ID »»————>  oklink@axl
+♛ UPI ID »»————>  @axl at time I remove my UPI if who want premium plan contact me direct
 Would you like to become a Prime Member? Follow these steps:-
 
 ✤ Step 1: Go to any payment app like Google PAY, PAYTM,
