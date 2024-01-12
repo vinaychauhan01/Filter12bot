@@ -64,29 +64,20 @@ async def send_for_index(bot, message):
         last_msg_id = int(match.group(5))
         if chat_id.isnumeric():
             chat_id  = int(("-100" + chat_id))
-    elif message.forward_from_chat.type == enums.ChatType.CHANNEL:
-        last_msg_id = message.forward_from_message_id
-        chat_id = message.forward_from_chat.username or message.forward_from_chat.id
+        elif msg.forward_from_chat and msg.forward_from_chat.type == enums.ChatType.CHANNEL:
+        last_msg_id = msg.forward_from_message_id
+        chat_id = msg.forward_from_chat.username or msg.forward_from_chat.id
     else:
+        await message.reply('This is not forwarded message or link.')
         return
     try:
-        await bot.get_chat(chat_id)
-    except ChannelInvalid:
-        return await message.reply('This may be a private channel / group. Make me an admin over there to index the files.')
-    except (UsernameInvalid, UsernameNotModified):
-        return await message.reply('Invalid Link specified.')
+        chat = await bot.get_chat(chat_id)
     except Exception as e:
         logger.exception(e)
         return await message.reply(f'Errors - {e}')
-    try:
-        k = await bot.get_messages(chat_id, last_msg_id)
-    except:
-        return await message.reply('Make Sure That Iam An Admin In The Channel, if channel is private')
-    if k.empty:
-        return await message.reply('This may be group and iam not a admin of the group.')
 
-        
-
+    if chat.type != enums.ChatType.CHANNEL:
+        return await message.reply("I can index only channels.")
 
     s = await message.reply("Send skip message number.")
     msg = await bot.listen(message.from_user.id)
