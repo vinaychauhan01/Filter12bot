@@ -85,6 +85,9 @@ async def send_for_index(bot, message):
     if k.empty:
         return await message.reply('This may be group and iam not a admin of the group.')
 
+        if chat.type != enums.ChatType.CHANNEL:
+        return await message.reply("I can index only channels.")
+
     s = await message.reply("Send skip message number.")
     msg = await bot.listen(message.from_user.id)
     await s.delete()
