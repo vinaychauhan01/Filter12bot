@@ -118,7 +118,7 @@ async def send_for_index(bot, message):
     buttons = [
         [
             InlineKeyboardButton('Accept Index',
-                                 callback_data=f'index#accept#{chat_id}#{last_msg_id}#{message.from_user.id}')
+                                 callback_data=f'index#accept#{chat_id}#{last_msg_id}#{skip}#{message.from_user.id}')
         ],
         [
             InlineKeyboardButton('Reject Index',
@@ -132,18 +132,7 @@ async def send_for_index(bot, message):
     await message.reply('ThankYou For the Contribution, Wait For My Moderators to verify the files.')
 
 
-@Client.on_message(filters.command('setskip') & filters.user(ADMINS))
-async def set_skip_number(bot, message):
-    if ' ' in message.text:
-        _, skip = message.text.split(" ")
-        try:
-            skip = int(skip)
-        except:
-            return await message.reply("Skip number should be an integer.")
-        await message.reply(f"Successfully set SKIP number as {skip}")
-        temp.CURRENT = int(skip)
-    else:
-        await message.reply("Give me a skip number")
+
 
 
 async def index_files_to_db(lst_msg_id, chat, msg, bot):
