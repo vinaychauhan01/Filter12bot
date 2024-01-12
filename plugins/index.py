@@ -152,7 +152,9 @@ async def index_files_to_db(lst_msg_id, chat, msg, bot):
                     await msg.edit(f"Successfully Cancelled!!\n\nSaved <code>{total_files}</code> files to dataBase!\nDuplicate Files Skipped: <code>{duplicate}</code>\nDeleted Messages Skipped: <code>{deleted}</code>\nNon-Media messages skipped: <code>{no_media + unsupported}</code>(Unsupported Media - `{unsupported}` )\nErrors Occurred: <code>{errors}</code>")
                     break
                 current += 1
-                if skip_counter < temp.SKIP:  # Check if skip counter is less than specified skip value
+                  skip_value = 5  # Set the desired number of messages to skip
+temp.CURRENT = skip_value  # Set the skip value in temp.CURRENT
+await index_files_to_db(int(lst_msg_id), chat, msg, bot)
                     skip_counter += 1
                     continue  # Skip this message
                 if current % 20 == 0:
