@@ -85,11 +85,19 @@ async def send_for_index(bot, message):
     if k.empty:
         return await message.reply('This may be group and iam not a admin of the group.')
 
+    s = await message.reply("Send skip message number.")
+    msg = await bot.listen(message.from_user.id)
+    await s.delete()
+    try:
+        skip = int(msg.text)
+    except:
+        return await message.reply("Number is invalid.")
+
     if message.from_user.id in ADMINS:
         buttons = [
             [
                 InlineKeyboardButton('Yes',
-                                     callback_data=f'index#accept#{chat_id}#{last_msg_id}#{message.from_user.id}')
+                                     callback_data=f'index#accept#{chat_id}#{last_msg_id}#{skip}')
             ],
             [
                 InlineKeyboardButton('close', callback_data='close_data'),
@@ -114,7 +122,7 @@ async def send_for_index(bot, message):
         ],
         [
             InlineKeyboardButton('Reject Index',
-                                 callback_data=f'index#reject#{chat_id}#{message.id}#{message.from_user.id}'),
+                                 callback_data=f'index#reject#{chat_id}#{message.id}#{skip}'),
         ]
     ]
     reply_markup = InlineKeyboardMarkup(buttons)
